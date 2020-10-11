@@ -1,0 +1,35 @@
+/* body {
+  margin: 0;
+  padding: 2rem;
+} */
+
+table {
+  border:1px solid black;
+  width: 100%;
+  position: relative;
+  border-collapse: collapse; 
+}
+tbody{
+/* display:block; */
+  width: 100%;
+  /* overflow: auto;  */
+  height: 305px;}
+  thead {
+    background-color: #24344B;
+    color:#fff;
+  }
+ 
+th, td {
+  
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+}
+
+th {
+  background-color: #24344B;
+  color: #fff;
+  position: sticky;
+  top: 0; 
+  
+}

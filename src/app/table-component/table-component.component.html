@@ -1,0 +1,42 @@
+<table class="fixed_header">
+    <thead>
+      <tr>
+        <th>Pos</th>
+        <th>Player</th>
+        <th>Mat</th>
+        <th>Inns</th>
+        <th>No</th>
+        <th>Runs</th>
+        <th>HS</th>
+        <th>Avg</th>
+        <th>BF</th>
+        <th>SR</th>
+        <th>100</th>
+        <th>50</th>
+        <th>4s</th>
+        <th>6s</th>
+        
+        
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let d of data;">
+        <td>{{d.POS}}</td>
+        <td>{{d.PLAYER}}</td>
+        <td>{{d.Mat}}</td>
+        <td>{{d.Inns}}</td>
+        <td>{{d.NO}}</td>
+        <td>{{d.Runs}}</td>
+        <td>{{d.HS}}</td>
+        <td>{{d.Avg}}</td>
+        <td>{{d.BF}}</td>
+        <td>{{d.SR}}</td>
+        <td>{{d['100']}}</td>
+        <td>{{d['50']}}</td>
+        <td>{{d['4s']}}</td>
+        <td>{{d['6s']}}</td>
+
+      </tr>
+    </tbody>
+  </table>

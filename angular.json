@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+             
               "src/styles.css"
             ],
             "scripts": []
@@ -32,6 +33,7 @@
             "production": {
               "fileReplacements": [
                 {
+                  
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
@@ -88,6 +90,7 @@
               "src/assets"
             ],
             "styles": [
+             
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "myassignment"
+    }
+  },
+  "defaultProject": "myassignment",
+  "cli": {
+    "analytics": "39f98b9e-a3b7-4c7b-82e7-164de24d2a57"
+  }
 }

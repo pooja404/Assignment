@@ -1,0 +1,26 @@
+<div class="menuicon">
+    <button type="button" (click)="toggleClick()"><img src="https://img.icons8.com/fluent/48/000000/menu--v1.png"/>
+    </button>
+    <span class="title">IPL Score Board</span>
+  </div>
+
+<div class="content-fluid container-fluid" style="display: flex;" >
+    <main>
+        
+        <div class="content" >
+            
+            <div class="row">
+                
+                <div [class]="side" *ngIf ="!toggle" style="background-color: #24344B;">
+                    <app-sidebar ></app-sidebar> 
+                </div>
+
+                <div [class]="main" style="padding: 3rem;">
+                     <app-table-component></app-table-component> 
+                  
+                </div>
+            </div>          
+        </div>        
+                
+    </main>
+</div>
