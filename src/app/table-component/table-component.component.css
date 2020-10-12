@@ -33,3 +33,10 @@ th {
   top: 0; 
   
 }
+.topspace{
+  margin-top: 30px;
+}
+.heading{
+  text-align: center;
+  padding: 5px;
+}
