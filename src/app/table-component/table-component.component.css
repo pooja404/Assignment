@@ -40,3 +40,10 @@ th {
   text-align: center;
   padding: 5px;
 }
+.form-control{
+  border-color: cadetblue;
+}
+.searchBox{
+  margin-left: 15px;
+    margin-bottom: 20px;
+}

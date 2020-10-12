@@ -10,8 +10,20 @@ import { Chart } from 'chart.js';
   styleUrls: ['./table-component.component.css']
 })
 export class TableComponentComponent implements OnInit {
-
+  searchText;
   chart :Chart;
+  private _jsonURL = 'assets/exceldataJSon.json';
+  data:any=[];
+  constructor(private http: HttpClient) {
+    this.getJSON().subscribe(resp => {
+     this.data= resp; 
+     console.log  (" RESP , resp ", this.data ); 
+
+    });
+  }
+  public getJSON(): Observable<any> {
+    return this.http.get(this._jsonURL);
+  }
 
   ngOnInit(): void {
     this.chart = new Chart('canvas', {
@@ -29,18 +41,7 @@ export class TableComponentComponent implements OnInit {
     });
   }
   
-  private _jsonURL = 'assets/exceldataJSon.json';
-  data:any=[];
-  constructor(private http: HttpClient) {
-    this.getJSON().subscribe(resp => {
-     this.data= resp; 
-     console.log  (" RESP , resp ", this.data ); 
-
-    });
-  }
-  public getJSON(): Observable<any> {
-    return this.http.get(this._jsonURL);
-  }
+  
 }
 var dringlichkeiten  = 
   [{
