@@ -6,22 +6,15 @@
 
 <div class="content-fluid container-fluid" style="display: flex;" >
     <main>
-        
         <div class="content" >
-            
             <div class="row">
-                
                 <div [class]="side" *ngIf ="!toggle" style="background-color: #24344B;">
                     <app-sidebar ></app-sidebar> 
                 </div>
-
                 <div [class]="main" style="padding: 3rem;">
-                     <app-table-component></app-table-component> 
-                     <!-- <router-outlet></router-outlet> -->
-                  
+                     <app-table-component></app-table-component>                   
                 </div>
             </div>          
-        </div>        
-                
+        </div>             
     </main>
 </div>

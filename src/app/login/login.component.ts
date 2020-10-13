@@ -31,6 +31,5 @@ login():void{
   }
   else{
   this.router.navigate(["home"]);}
-
-}
+ }
 }

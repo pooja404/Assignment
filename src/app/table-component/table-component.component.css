@@ -1,7 +1,3 @@
-/* body {
-  margin: 0;
-  padding: 2rem;
-} */
 
 table {
   border:1px solid black;
@@ -45,5 +41,5 @@ th {
 }
 .searchBox{
   margin-left: 15px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }

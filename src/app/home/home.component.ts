@@ -28,15 +28,5 @@ export class HomeComponent implements OnInit {
     console.log('true',this.toggle);
     this.main="com-md-12";}
   }
-  
-  // onSidebarToggle ( $event ) {
-  //   if ( $event ) {
-  //     this.sidebarCol = "sidebar-div col-md-1 "; 
-  //     this.contentCol = "content-div col-md-11";      
-  //   } else {
-  //     this.sidebarCol = "sidebar-div col-md-3"; 
-  //     this.contentCol = "content-div col-md-9";      
-  //   }
-  // }
 
 }
